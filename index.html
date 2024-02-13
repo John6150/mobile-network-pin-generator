@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main-container">
+
+    </div>
+    <div class="generator">
+        <div class="camera"></div>
+        <div class="time"></div>
+        <div class="network">
+            <div class="net"><img src="network.png" alt=""><p>LTE</p></div>
+            <div class="bat3"><img src="ba3.png" alt=""></div>
+        </div>
+        <input type="text" class="display" oninput="dis_()" name="">
+        <div class="add_number">Add Number</div>
+        <div class="btn">
+            <div class="row1">
+                <button onclick="dial('1')">1</button>
+                <button onclick="dial('2')">2</button>
+                <button onclick="dial('3')">3</button>
+            </div>
+            <div class="row1">
+                <button onclick="dial('4')">4</button>
+                <button onclick="dial('5')">5</button>
+                <button onclick="dial('6')">6</button>
+            </div>
+            <div class="row1">
+                <button onclick="dial('7')">7</button>
+                <button onclick="dial('8')">8</button>
+                <button onclick="dial('9')">9</button>
+            </div>
+            <div class="row1">
+                <button onclick="dial('*')">*</button>
+                <button onclick="dial('0')">0</button>
+                <button onclick="dial('#')">#</button>
+            </div>
+            <div class="row1">
+                <button onclick="call_()">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="30px" height="30px" viewBox="0 0 112 112" version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <image width="256" height="256"
+                                xlink:href="data:image/png;base64,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"
+                                id="img_1" />
+                        </defs>
+                        <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.4375 0.4375)" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+        <div class="icons">
+            <div class="icon1">
+                <img src="favourite.png" alt="">
+                <p>Favourites</p>
+            </div>
+            <div class="icon1">
+                <img src="recent.png" alt="">
+                <p>Recent</p>
+            </div>
+            <div class="icon1">
+                <img src="contacts.png" alt="">
+                <p>Contacts</p>
+            </div>
+            <div class="icon1">
+                <img src="keypad.png" alt="">
+                <p>Keypad</p>
+            </div>
+            <div class="icon1">
+                <img src="voicemail.png" alt="">
+                <p>Voicemail</p>
+            </div>
+        </div>
+        <div class="nav"></div>
+    </div>
+
+    <div class="generator">
+        <div class="first">
+            <!-- <label for="network">Network:</label> -->
+            <!-- <div class="networks">
+                <label for="mtn">Mtn<input id="mtn" name="card" type="radio"></label>
+                <label for="glo">Glo<input id="glo" name="card" type="radio"></label>
+                <label for="airtel">Airtel<input id="airtel" name="card" type="radio"></label>
+                <label for="9Mobile">9Mobile<input id="9Mobile" name="card" type="radio"></label>
+            </div> -->
+
+            <select name="" id="network">
+                <option value="">Select Network</option>
+                <option value="Mtn">Mtn</option>
+                <option value="Glo">Glo</option>
+                <option value="Airtel">Airtel</option>
+                <option value="9Mobile">9Mobile</option>
+            </select>
+        </div>
+        <div class="second">
+            <!-- <label for="amount">Amount:</label> -->
+            <select name="" id="amount">
+                <option value="">Amount</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="500">500</option>
+                <option value="1000">1000</option>
+            </select>
+        </div>
+        <div class="third">
+            <input type="number" id="qty" inputmode="qty" min="1" placeholder="Quantity">
+        </div>
+        <button onclick="gen()">Generate</button>
+        <div class="pins">
+            <table id="dis">
+                <!-- <thead> -->
+                <tr>
+                    <th>S/N</th>
+                    <th>Network</th>
+                    <th>Amount</th>
+                    <th>Pin</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
